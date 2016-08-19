@@ -1,0 +1,89 @@
+body {
+  font-family: "Roboto", "Arial";
+  font-weight: normal;
+
+}
+.main-navigation a {
+  font-size: 14px;
+  line-height: 30px;
+  color: #0000;
+
+}
+
+a.login {
+  font-size: 14px;
+  line-height: 30px;
+  color: #0000;
+}
+
+.slider-item-text h2 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #0000;
+
+}
+
+.slider-item-text p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+
+a.slider-button {
+  font-size: 12px;
+  line-height: 18px;
+
+}
+
+/*  directions  */
+
+.features-title {
+  font-size: 18px;
+  line-height: 30px;
+  color: #0000;
+}
+
+.features p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #283136;
+}
+
+.features-button{
+  font-size: 12px;
+  line-height: 18px;
+}
+/*  company-description      */
+
+.index-content-title-1 {
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+/* footer-map */
+
+.index-info-title {
+  font-size: 16px;
+  line-height: 30px;
+  color: #0000;
+}
+
+/* footer-socials*/
+
+.social-index-content {
+  font-size: 36px;
+  line-height: 36px;
+  color: #0000;
+}
+/*------------------------Страница -КАТАЛОГ----------------------------*/
+
+h1.catalog-welcome {
+  font-size: 40px;
+  color: #0000;
+}
+.sorting h2 {
+  font-size: 12px;
+  line-height: 18px;
+  color: #0000;
+}
