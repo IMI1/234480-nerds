@@ -3,45 +3,212 @@ body {
   font-weight: normal;
 
 }
+
+.section {
+  min-width: 1200px;
+}
+
+.header {
+  min-height: 100px;
+
+  background-color: #d1bfbf;
+}
+header .section-inner{
+  width: 880px;
+  min-height: 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #97d0d9;
+}
+/* распорка*/
+header .section-inner::after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.header-inner {}
+
+.header-logo {
+  width: 150px;
+  float: left;
+  margin-right: 10px;
+  background-color: #a892d2;
+}
+.main-navigation {
+  width: 560px;
+  float: left;
+  margin-right: 50px;
+  background-color: #4d4c67;
+}
+.user-block {
+  width: 100px;
+  float: right;
+  margin-right: 0px;
+  background-color: #79ada0;
+}
+
+/*--------------------------------------------------------------*/
 .main-navigation a {
   font-size: 14px;
   line-height: 30px;
-  color: #0000;
+  color: #000;
 
 }
 
 a.login {
   font-size: 14px;
   line-height: 30px;
-  color: #0000;
+  color: #000;
 }
 
+main .section-inner {
+  width: 880px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #97d0d9;
+}
+
+main .section-inner::after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/*------------------- Слайдер-------------------------- */
+
+/* фон и высота слайдера */
+.slider {
+	position: relative;
+	height: 336px;
+  background-color: #eee;
+  margin-bottom: 80px;
+
+}
+
+
+.slider-inner {
+
+}
+
+.slide-toggle {
+	display: none;
+}
+
+/* круглые кнопки слайдера */
+.slider-dots {
+	position: absolute;
+	bottom: 95px;
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+	height: 10px;
+	text-align: center;
+	z-index: 100;
+	line-height: 0;
+}
+.slider-dots label {
+	display: inline-block;
+	vertical-align: top;
+	width: 4px;
+	height: 4px;
+	margin: 0 3px;
+
+	border: 3px solid #fff;
+	background: #fff;
+	border-radius: 50%;
+
+	cursor: pointer;
+}
+
+/* переключение круглых кнопок слайдера */
+.slider-toggle-1:checked ~ .slider-dots label:nth-child(1),
+.slider-toggle-2:checked ~ .slider-dots label:nth-child(2),
+.slider-toggle-3:checked ~ .slider-dots label:nth-child(3) {
+	background:#c1c1c1;
+}
+
+
+.slider-list {}
+
+/* все неактивные слайды не отображаются на экране */
+.slider-item {
+	position: relative;
+
+	display: none;
+}
+
+/* переключение между слайдами */
+.slider-toggle-1:checked ~ .slider-list .slider-item:nth-child(1),
+.slider-toggle-2:checked ~ .slider-list .slider-item:nth-child(2),
+.slider-toggle-3:checked ~ .slider-list .slider-item:nth-child(3) {
+	display: block;
+}
+
+/* картинка слайда */
+.slider-item-image {
+	position: absolute;
+	right: 0;
+
+	text-align: right;
+}
+.slider-item-image img {
+	/*float: right;*/
+}
+
+
+/* текст на слайде */
+.slider-item-text {
+	position: absolute;
+	top: 50px;
+
+}
 .slider-item-text h2 {
-  font-size: 36px;
+	padding: 0;
+	margin: 0;
   font-weight: bold;
-  line-height: 36px;
-  color: #0000;
-
+	font-size: 36px;
+	line-height: 36px;
+	color: #000;
 }
-
 .slider-item-text p {
+	padding: 5px 0;
   font-size: 16px;
   line-height: 22px;
-  color: #283136;
+	color: #283136;
 }
 
-a.slider-button {
+/* кнопка */
+.slider-button {
+	width: 240px;
+	margin-top: 22px;
   font-size: 12px;
   line-height: 18px;
 
 }
+/*===============================================*/
+
 
 /*  directions  */
+.features {
+  background-color: #d39696;
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+.features:last-child {
+   margin-right: 0;
+}
+
+.directions {
+
+   margin-bottom: 80px;
+}
 
 .features-title {
   font-size: 18px;
   line-height: 30px;
-  color: #0000;
+  color: #000;
 }
 
 .features p {
@@ -54,19 +221,85 @@ a.slider-button {
   font-size: 12px;
   line-height: 18px;
 }
-/*  company-description      */
+/* =================== company-description ============     */
+.company-description {
+  margin-bottom: 45px;
+}
+.company-description-inner {
+  padding: 70px 0px;
+
+}
+.index-content-left {
+  float: left;
+  width: 620px;
+  margin-right: 20px;
+  background-color: #d39696;
+}
+.index-content-right{
+  float: right;
+  width: 240px;
+  min-height: 340px;
+  background-color: #d39696;
+}
+.index-content-title {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000;
+}
 
 .index-content-title-1 {
   font-size: 16px;
   line-height: 22px;
   color: #283136;
 }
-/* footer-map */
 
+/*=========partners========================*/
+.partners {
+  margin-bottom: 90px;
+}
+.partners-inner{
+  min-height: 90px;
+  padding-bottom: 30px;
+}
+.partners-logo {
+
+}
+
+
+/*================ footer-map *========================*/
+footer .footer-map {
+  width: 1200px;
+
+  margin: 0 auto;
+  box-sizing: border-box;
+
+
+}
+footer .footer-map-inner{
+  width: 880px;
+  height: 416px;
+
+  margin: 0 auto;
+  box-sizing: border-box;
+
+}
+.footer-map-inner {
+
+}
+ .contact-info {
+   height: 240px;
+   width: 250px;
+
+
+    background-color: #87a7a4;
+}
+.write-info {
+  
+}
 .index-info-title {
   font-size: 16px;
   line-height: 30px;
-  color: #0000;
+  color: #000;
 }
 
 /* footer-socials*/
@@ -74,16 +307,16 @@ a.slider-button {
 .social-index-content {
   font-size: 36px;
   line-height: 36px;
-  color: #0000;
+  color: #000;
 }
 /*------------------------Страница -КАТАЛОГ----------------------------*/
 
 h1.catalog-welcome {
   font-size: 40px;
-  color: #0000;
+  color: #000;
 }
 .sorting h2 {
   font-size: 12px;
   line-height: 18px;
-  color: #0000;
+  color: #000;
 }
