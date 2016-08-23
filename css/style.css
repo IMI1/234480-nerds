@@ -283,9 +283,7 @@ footer .footer-map-inner{
   box-sizing: border-box;
 
 }
-.footer-map-inner {
-
-}
+ 
  .contact-info {
    height: 240px;
    width: 250px;
@@ -294,7 +292,7 @@ footer .footer-map-inner{
     background-color: #87a7a4;
 }
 .write-info {
-  
+
 }
 .index-info-title {
   font-size: 16px;
