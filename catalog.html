@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -10,12 +11,10 @@
     <header>
       <div class="section  header">
         <div class="section-inner  header-inner">
-          <nav class="main-navigation-catalog">
-            <div class="index-logo-catalog">
-              <a href="#">
-                <img  src="img/indexlogo.png" width="139" height="56" alt="Нёрдс">
-              </a>
-            </div>
+          <a class="header-logo" href="index.html">
+            <img  src="img/indexlogo.png" width="139" height="56" alt="Нёрдс">
+          </a>
+          <nav class="main-navigation">
             <ul>
               <li>
                 <a href="#">СТУДИЯ</a>
@@ -23,200 +22,244 @@
               <li>
                 <a href="#">КЛИЕНТЫ</a>
               </li>
-              <li>
-                <a href="#">МАГАЗИН</a>
+              <li class="active-3">
+                <a>МАГАЗИН</a>
               </li>
               <li>
                 <a href="#">КОНТАКТЫ</a>
               </li>
             </ul>
           </nav>
-          <div class="user-block-catalog">
-            <a class="login-catalog" href="#">КОРЗИНА</a>
+          <div class="user-block">
+            <a class="login" href="#">КОРЗИНА</a>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="section  page-details">
-        <div class="section-inner  page-details-inner">
-          <h1 class="catalog-welcome">ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
+      <div class="section  catalog-directions">
+        <div class="section-inner  catalog-subtitle">
+          <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН <br>
+                   ГОТОВЫХ МАКЕТОВ</h1>
         </div>
       </div>
 
       <div class="section  catalog">
-        <div class="section-inner  catalog-inner">
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
-            <div>
-              <!--Блок стоимость ?-->
-            </div>
-            <fieldset class="selection-grid">
-              <legend class="grid">СЕТКА:</legend>
+			  <div class="section-inner  catalog-inner">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="field  range-filter">
+              <legend class="heading">Стоимость:</legend>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle  toggle-min"></div>
+                <div class="toggle  toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от
+                  <input name="min-price" type="text" value="0">
+                </label>
+                <label class="max-price">до
+                  <input name="max-price" type="text" value="15000">
+                </label>
+              </div>
+            </fieldset>
+
+
+            <fieldset class="field  selection-grid">
+              <legend class="heading">Сетка:</legend>
               <ul>
                 <li>
-                  <input class="feature-dot feature-dot-1" type="radio" id="feature-dot-1" name="features" checked>
-                  <label for="feature-dot-1">Адаптивная</label>
+                  <label class="login-radio  login-radio-1">
+                    <input type="radio" id="feature-dot-1" name="features" checked>
+                    <span class="radio-indicator  radio-indicator-1"></span>
+                    Адаптивная
+                  </label>
                 </li>
                 <li>
-                  <input class="feature-dot feature-dot-2" type="radio" id="feature-dot-2" name="features">
-                  <label for="feature-dot-2">Фиксированная</label>
+                  <label class="login-radio  login-radio-2">
+                    <input type="radio" id="feature-dot-2" name="features">
+                    <span class="radio-indicator  radio-indicator-2"></span>
+                    Фиксированная
+                  </label>
                 </li>
                 <li>
-                  <input class="feature-dot feature-dot-3" type="radio" id="feature-dot-3" name="features">
-                  <label for="feature-dot-3">Резиновая</label>
+                  <label class="login-radio  login-radio-3">
+                    <input type="radio" id="feature-dot-3" name="features">
+                    <span class="radio-indicator  radio-indicator-3"></span>
+                    Резиновая
+                  </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="selection-specification">
-              <legend class="specification">ОСОБЕННОСТИ:</legend>
+
+
+            <fieldset class="field  selection-specification">
+              <legend class="heading">Особенности:</legend>
               <ul>
                 <li>
-                  <input class="specification-tick specification-tick-1" type="checkbox" id="specification-tick-1" name="specification-1" checked>
-                  <label for="specification-tick-1">Слайдер</label>
+                  <label class="login-checkbox">
+                    <input type="checkbox" id="specification-tick-1" name="specification-1" checked>
+                    <span class="checkbox-indicator  checkbox-indicator-1"></span>
+                    Слайдер
+                  </label>
                 </li>
                 <li>
-                  <input class="specification-tick specification-tick-2" type="checkbox" id="specification-tick-2" name="specification-2">
-                  <label for="specification-tick-2">Блок преимуществ</label>
+                  <label class="login-checkbox">
+                    <input type="checkbox" id="specification-tick-2" name="specification-2">
+                    <span class="checkbox-indicator  checkbox-indicator-2"></span>
+                    Блок преимуществ
+                  </label>
                 </li>
                 <li>
-                  <input class="specification-tick specification-tick-3" type="checkbox" id="specification-tick-3" name="specification-3" checked>
-                  <label for="specification-tick-3">Новости</label>
+                  <label class="login-checkbox">
+                    <input type="checkbox" id="specification-tick-3" name="specification-3" checked>
+                    <span class="checkbox-indicator  checkbox-indicator-3"></span>
+                    Новости
+                  </label>
                 </li>
                 <li>
-                  <input class="specification-tick specification-tick-4" type="checkbox" id="specification-tick-4" name="specification-4">
-                  <label for="specification-tick-4">Галерея</label>
+                  <label class="login-checkbox">
+                    <input type="checkbox" id="specification-tick-4" name="specification-4">
+                    <span class="checkbox-indicator  checkbox-indicator-4"></span>
+                    Галерея
+                  </label>
                 </li>
                 <li>
-                  <input class="specification-tick specification-tick-5" type="checkbox" id="specification-tick-5" name="specification-5">
-                  <label for="specification-tick-5">Корзина</label>
+                  <label class="login-checkbox">
+                    <input type="checkbox" id="specification-tick-5" name="specification-5">
+                    <span class="checkbox-indicator  checkbox-indicator-5"></span>
+                    Корзина
+                  </label>
                 </li>
               </ul>
             </fieldset>
-            <button class="catalog-btn" type="submit">показать</button>
+            <button class="button  catalog-btn" type="submit">показать</button>
           </form>
 
-          <section class="catalog-list">
-            <div class="sorting">
-              <h2>сортировать:</h2>
-              <ul>
-                <li>
-                  <a href="#">по цене</a>
-                </li>
-                <li>
-                  <a href="#">по типу</a>
-                </li>
-                <li>
-                  <a href="#">по функционалу</a>
-                </li>
-              </ul>
-              <div class="indicator-1"></div>
-              <div class="indicator-2"></div>
-            </div>
-
+				  <section class="catalog-list">
             <div class="catalog-item">
               <div class="catalog-item-img">
-                <img src="img/item-img-1.jpg" alt="Aviator" width="240" height="240">
+                <img src="http://liss38.ru/htmlacademy-basic/nerds/process/catalog-item/img/catalog-item-img_01.jpg" alt="catalog item image alternative text" width="240" height="240">
               </div>
               <div class="catalog-item-description">
                 <h3>AVIATOR</h3>
                 <p>Одностраничный макет с авторским дизайном</p>
-                <button class="button">8000 Р.</button>
+                <button class="button catalog-item-buy">8000 р.</button>
               </div>
+            </div>
+
+            <div class="catalog-item">
               <div class="catalog-item-img">
-                <img src="img/item-img-2.jpg" alt="SUNSET" width="240" height="240">
+                <img src="http://liss38.ru/htmlacademy-basic/nerds/process/catalog-item/img/catalog-item-img_02.jpg" alt="catalog item image alternative text" width="240" height="240">
               </div>
               <div class="catalog-item-description">
-                <h3>SUNSET</h3>
+                <h3>Sunset</h3>
                 <p>Интернет-магазин с личным кабинетом</p>
-                <button class="button">10000 Р.</button>
+                <button class="button catalog-item-buy">10000 Р.</button>
               </div>
+            </div>
+
+            <div class="catalog-item">
               <div class="catalog-item-img">
-                <img src="img/item-img-3.jpg" alt="FORTE" width="240" height="240">
+                <img src="http://liss38.ru/htmlacademy-basic/nerds/process/catalog-item/img/catalog-item-img_03.jpg" alt="catalog item image alternative text" width="240" height="240">
               </div>
               <div class="catalog-item-description">
                 <h3>FORTE</h3>
                 <p>Отличный макет для личного блога</p>
-                <button class="button">5000 Р.</button>
+                <button class="button catalog-item-buy">5000 р.</button>
               </div>
+            </div>
+
+            <div class="catalog-item">
               <div class="catalog-item-img">
-                <img src="img/item-img-4.jpg" alt="MODERN ORGANIC THAI" width="240" height="240">
+                <img src="http://liss38.ru/htmlacademy-basic/nerds/process/catalog-item/img/catalog-item-img_04.jpg" alt="catalog item image alternative text" width="240" height="240">
               </div>
               <div class="catalog-item-description">
-                <h3>MODERN ORGANIC THAI</h3>
+                <h3>Modern Organic THAI</h3>
                 <p>Сайт для ресторана быстрого питания</p>
-                <button class="button">12000 Р.</button>
+                <button class="button catalog-item-buy">12000 Р.</button>
               </div>
+            </div>
+
+            <div class="catalog-item">
               <div class="catalog-item-img">
-                <img src="img/item-img-5.jpg" alt="AVENUE" width="239" height="240">
+                <img src="http://liss38.ru/htmlacademy-basic/nerds/process/catalog-item/img/catalog-item-img_05.jpg" alt="catalog item image alternative text" width="240" height="240">
               </div>
               <div class="catalog-item-description">
                 <h3>AVENUE</h3>
                 <p>Макет для блога о путешествиях</p>
-                <button class="button">8000 Р.</button>
+                <button class="button catalog-item-buy">8000 Р.</button>
               </div>
+            </div>
+
+            <div class="catalog-item">
               <div class="catalog-item-img">
-                <img src="img/item-img-6.jpg" alt="DOVETAIL" width="239" height="240">
+                <img src="http://liss38.ru/htmlacademy-basic/nerds/process/catalog-item/img/catalog-item-img_06.jpg" alt="catalog item image alternative text" width="240" height="240">
               </div>
               <div class="catalog-item-description">
                 <h3>DOVETAIL</h3>
                 <p>Интернет-магазин с галереей товаров</p>
-                <button class="button">14000 Р.</button>
+                <button class="button catalog-item-buy">14000 Р.</button>
               </div>
             </div>
-
-            <div class="paginator">
-              <a href="#1">1</a>
-              <a href="#2">2</a>
-              <a href="#3">3</a>
-              <a href="#next">следующая</a>
-            </div>
-          </section>
-        </div>
-      </div>
+				  </section>
+			  </div>
+	    </div>
     </main>
 
-    <footer>
-      <div class="section  footer-map">
-        <div class="section-inner  footer-map-inner">
-          <img src="img/map.png" width="1199" height="416" alt="Карта">
-          <div class="contact-info">
-            <h2 class="index-info-title">NЁRDS DESIGN STUDIO</h2>
-            <p>191186, Санкт-Петербург<br>
+
+
+
+
+
+  <!--  <footer>
+      <div class="section-footer  section-footer-map">
+        <img class="map" src="img/map.png" width="1199" height="416" alt="Карта">
+      </div>
+      <div class="section  footer">
+        <div class="section-inner  footer-inner">
+          <div class="contact-info  contact-info-inner">
+            <h3 class="index-info-title">NЁRDS DESIGN STUDIO</h3>
+            <p class="address">191186, Санкт-Петербург,<br>
                 ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7(812)275-75-75</p>
+            <p class="contact-tel">тел. +7 (812) 275-75-75</p>
             <button class="button  index-info-button" type="submit">напишите нам</button>
           </div>
-          <div class="write-info">
-            <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="write-form-field">
-                <label for="text-name">Ваше имя</label>
-                <input type="text" id="text-name" name="name" value="представьтесь, пожалуйста">
-              </div>
-              <div class="write-form-field">
-                <label for="text-e-mail">Ваш e-mail</label>
-                <input type="text" id="text-e-mail" name="e-mail" value="для отправки ответа">
-              </div>
-              <div class="write-form-field">
-                <label for="text-letter">Текст письма:</label>
-                <input type="text" id="text-letter" name="letter" value="в свободной форме">
-              </div>
-              <input type="submit" class="button  write-info-button" value="отправить">
-              <div class="btn-closing"></div><!--Закрытие окна ?-->
-            </form>
+
+          <div class="footer-content">
+            <p class="statement"><b>Давайте дружить, это выгодно!</b></p>
+            <p class="declaration">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-btn  social-btn-vk">В контакте</a>
+            <a href="#" class="social-btn  social-btn-fb">Фейсбук</a>
+            <a href="#" class="social-btn  social-btn-inst">Инстаграм</a>
           </div>
         </div>
       </div>
-      <div class="section  footer-socials">
-        <div class="section-inner  footer-socials-inner">
-          <h2 class="social-index-content">Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-          <a class="social-btn  social-btn-vk" href="#">В контакте</a>
-          <a class="social-btn  social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn  social-btn-inst" href="#">Инстаграм</a>
-        </div>
-      </div>
-    </footer>
+    </footer>-->
 
+    <div class="modal-content  modal-content-info">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="write-form-field-1">
+          <label for="text-name">Ваше имя</label><br>
+          <input type="text" id="text-name" name="name" value="представьтесь, пожалуйста">
+        </div>
+        <div class="write-form-field-2">
+          <label for="text-e-mail">Ваш e-mail</label><br>
+          <input type="text" id="text-e-mail" name="e-mail" value="для отправки ответа">
+        </div>
+        <div class="write-form-field-3">
+          <label for="text-letter">Текст письма:</label><br>
+          <input type="text" id="text-letter" name="letter" value="в свободной форме">
+        </div>
+        <button class="button  write-info-button" type="submit">отправить</button>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
   </body>
 </html>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -22,7 +23,7 @@
                 <a href="#">КЛИЕНТЫ</a>
               </li>
               <li>
-                <a href="#">МАГАЗИН</a>
+                <a href="catalog.html">МАГАЗИН</a>
               </li>
               <li>
                 <a href="#">КОНТАКТЫ</a>
@@ -42,7 +43,6 @@
           <input class="slide-toggle  slider-toggle-1" type="radio" id="slider-toggle-1" name="toggle" checked>
           <input class="slide-toggle  slider-toggle-2" type="radio" id="slider-toggle-2" name="toggle">
           <input class="slide-toggle  slider-toggle-3" type="radio" id="slider-toggle-3" name="toggle">
-
           <div class="slider-dots">
             <label class="slider-dot" for="slider-toggle-1"></label>
             <label class="slider-dot" for="slider-toggle-2"></label>
@@ -53,9 +53,9 @@
               <div class="slider-item-image  slider-item-image-1">
                 <img src="img/indeximage1.png" width="338" height="231" alt="image1">
               </div>
-              <div class="slider-item-text  slider-item-text-1">
-                <h2>Долго, дорого,<br>скрупулезно.</h2>
-                <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
+              <div class="slider-item-text">
+                <p class="statement"><b>Долго, дорого,<br>скрупулезно.</b></p>
+                <p class="declaration">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
                 <a href="#" class="button  slider-button">узнать больше</a>
               </div>
             </div>
@@ -63,9 +63,9 @@
               <div class="slider-item-image  slider-item-image-2">
                 <img src="img/indeximage2.png" width="230" height="249" alt="image2 ">
               </div>
-              <div class="slider-item-text  slider-item-text-2">
-                <h2> Любите ли вы математику, <br>как любим ее мы?</h2>
-                <p> Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать</p>
+              <div class="slider-item-text">
+                <p class="statement"><b>Любите ли вы математику, <br>как любим ее мы?</b></p>
+                <p class="declaration"> Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать</p>
                 <a href="#" class="button  slider-button">узнать больше</a>
               </div>
             </div>
@@ -73,9 +73,9 @@
               <div class="slider-item-image  slider-item-image-3">
                 <img src="img/indeximage3.png" width="333" height="319" alt="image3">
               </div>
-              <div class="slider-item-text  slider-item-text-3 ">
-                <h2> Только наркотики,<br>только хардкор!</h2>
-                <p> Все дизайнерские решения в нашей компании принимаются <br>только под воздействием качественных галлюциногенов</p>
+              <div class="slider-item-text">
+                <p class="statement"><b>Только наркотики,<br>только хардкор!</b></p>
+                <p class="declaration"> Все дизайнерские решения в нашей компании принимаются <br>только под воздействием качественных галлюциногенов</p>
                 <a href="#" class="button  slider-button">узнать больше</a>
               </div>
             </div>
@@ -89,19 +89,19 @@
             <img src="img/indeximage4.png" width="240" height="124" alt="Веб-сайты">
             <h2 class="features-title">ВЕБ-САЙТЫ</h2>
             <p>Мир никогда не будет прежним после того как увидит Ваш сайт!</p>
-            <a class="features-button  btn-website" href="#">заказать</a>
+            <a href="#" class="button  btn-website">заказать</a>
           </div>
           <div class="features">
             <img src="img/indeximage5.png" width="240" height="124" alt="Приложения">
             <h2 class="features-title">ПРИЛОЖЕНИЯ</h2>
             <p>Покорите топ-10 приложений<br> в AppStore и Google Play</p>
-            <a class="features-button  btn-apps" href="#">заказать</a>
+            <a href="#" class="button  btn-apps">заказать</a>
           </div>
           <div class="features">
             <img src="img/indeximage6.png" width="240" height="124" alt="Презентации">
             <h2 class="features-title">ПРЕЗЕНТАЦИИ</h2>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="features-button  btn-presentations" href="#">заказать</a>
+            <a href="#" class="button  btn-presentations">заказать</a>
           </div>
         </div>
       </div>
@@ -109,19 +109,19 @@
       <div class="section  company-description">
         <div class="section-inner  company-description-inner">
           <div class="index-content-left">
-            <p class="index-content-title"><b>Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</b></p>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический
-                расчет выше креатива. Работаем не покладая рук, как роботы</p>
-            <div class="index-content-left-1">
-              <h3 class="index-content-title-left">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
-              <ul class="index-content-list-left">
-                <li class="list-left">
+            <p class="statement"><b>Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</b></p>
+            <p class="declaration">Исповедуем принципы минимализма и чистоты. Ставим математический<br>
+                расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+            <h3 class="subtitle">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
+            <div class="list-description">
+              <ul>
+                <li class="list">
                   <p>Веб-сайтов любой сложности</p>
                 </li>
-                <li class="list-left">
+                <li class="list">
                   <p>Мобильных приложений для iOS и Android</p>
                 </li>
-                <li class="list-left">
+                <li class="list">
                   <p>Слайдшоу и видео для корпоративных презентаций</p>
                 </li>
               </ul>
@@ -134,16 +134,16 @@
             <div class="index">
               <span class="index-1">SINCE 2004</span>
             </div>
-            <div class="index-content-right-1">
-              <h3 class="index-content-title-right">КАК МЫ РАБОТАЕМ:</h3>
-              <ul class="index-content-list-right">
-                <li class="list-right">
+            <h3 class="subtitle">КАК МЫ РАБОТАЕМ:</h3>
+            <div class="list-description">
+              <ul>
+                <li class="list">
                   <p>С самоотдачей 146%</p>
                 </li>
-                <li class="list-right">
+                <li class="list">
                   <p>Соблюдая сроки на 100%</p>
                 </li>
-                <li class="list-right">
+                <li class="list">
                   <p>По предоплате 50%</p>
                 </li>
               </ul>
@@ -161,7 +161,7 @@
             <img src="img/logo4.png" width="199" height="68" alt="Логотип">
           </a>
           <a href="#" class="partners-logo  partners-logo-3">
-            <img src="img/logo5.png" width="209" height="86" alt="Логотип">
+            <img src="img/logo5.png" width="209" height="90" alt="Логотип">
           </a>
 		  	</div>
 	  	</div>
@@ -170,45 +170,48 @@
     <footer>
       <div class="section-footer  section-footer-map">
         <img class="map" src="img/map.png" width="1199" height="416" alt="Карта">
-        <div class="write-info  write-info-form">
-          <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="write-form-field">
-              <label for="text-name">Ваше имя</label>
-              <input type="text" id="text-name" name="name" value="представьтесь, пожалуйста">
-            </div>
-            <div class="write-form-field">
-              <label for="text-e-mail">Ваш e-mail</label>
-              <input type="text" id="text-e-mail" name="e-mail" value="для отправки ответа">
-            </div>
-            <div class="write-form-field">
-              <label for="text-letter">Текст письма:</label>
-              <input type="text" id="text-letter" name="letter" value="в свободной форме">
-            </div>
-            <input type="submit" class="button  write-info-button" value="отправить">
-            <div class="btn-closing"></div><!--Закрытие окна ?-->
-          </form>
-        </div>
-
-        <!--<div class="section-inner  footer-map-inner">-->
+      </div>
+      <div class="section  footer">
+        <div class="section-inner  footer-inner">
           <div class="contact-info  contact-info-inner">
-            <h2 class="index-info-title">NЁRDS DESIGN STUDIO</h2>
-            <p>191186, Санкт-Петербург<br>
+            <h3 class="index-info-title">NЁRDS DESIGN STUDIO</h3>
+            <p class="address">191186, Санкт-Петербург,<br>
                 ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7(812)275-75-75</p>
+            <p class="contact-tel">тел. +7 (812) 275-75-75</p>
             <button class="button  index-info-button" type="submit">напишите нам</button>
           </div>
-        <!--</div>-->
-      </div>
 
-    <!--  <div class="section  footer-socials">
-        <div class="section-inner  footer-socials-inner">
-          <h2 class="social-index-content">Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-          <a class="social-btn  social-btn-vk" href="#">В контакте</a>
-          <a class="social-btn  social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn  social-btn-inst" href="#">Инстаграм</a>
+          <div class="footer-content">
+            <p class="statement"><b>Давайте дружить, это выгодно!</b></p>
+            <p class="declaration">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-btn  social-btn-vk">В контакте</a>
+            <a href="#" class="social-btn  social-btn-fb">Фейсбук</a>
+            <a href="#" class="social-btn  social-btn-inst">Инстаграм</a>
+          </div>
         </div>
-      </div>-->
+      </div>
     </footer>
+
+    <div class="modal-content  modal-content-info">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="write-form-field-1">
+          <label for="text-name">Ваше имя</label><br>
+          <input type="text" id="text-name" name="name" value="представьтесь, пожалуйста">
+        </div>
+        <div class="write-form-field-2">
+          <label for="text-e-mail">Ваш e-mail</label><br>
+          <input type="text" id="text-e-mail" name="e-mail" value="для отправки ответа">
+        </div>
+        <div class="write-form-field-3">
+          <label for="text-letter">Текст письма:</label><br>
+          <input type="text" id="text-letter" name="letter" value="в свободной форме">
+        </div>
+        <button class="button  write-info-button" type="submit">отправить</button>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
   </body>
 </html>
