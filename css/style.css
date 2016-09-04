@@ -148,7 +148,7 @@ body {
 }
 
 
- /*=======================sprite=====================*/
+ /*=======================index.html=====================*/
 h1, h2, h3, p {
   margin: 0;
   padding: 0;
@@ -188,7 +188,7 @@ img {
   margin-top: 26px;
   margin-right: 20px;
 }
-/*--------------------------------------------------------------*/
+/*=====================main-navigation========================*/
 
 .main-navigation {
   width: 559px;
@@ -240,9 +240,9 @@ img {
   height: 2px;
   right: 0px;
   left: 45px;
-
   background-color: #fb565a;
 }
+
 .main-navigation .active-3 a:hover {
   color: #000000;
 }
@@ -296,7 +296,7 @@ img {
   background-position: -81px -20px;
   opacity: 0.15;
 }
-           /*  =================== slaider==============  */
+           /*====================== slaider======================= */
 
 .slider {
   margin-bottom: 80px;
@@ -375,7 +375,7 @@ img {
   width: 340px;
 }
 
-/* =========text slider=================*/
+/* ========================text slider=======================*/
 .statement {
   padding: 0;
   margin: 0;
@@ -413,6 +413,9 @@ img {
   cursor: pointer;
   text-align: center;
   vertical-align: top;
+  border-top: 3px solid transparent;
+  padding-top: 7px;
+  padding-bottom: 10px;
 }
 
 .button:hover {
@@ -421,10 +424,13 @@ img {
 
 .button:active {
   background-color: #b63538;
+  border-top-color: #9b2d30;
+
 }
 
 .slider-button {
-  padding: 10px 70px;
+  padding-left: 70px;
+  padding-right: 70px;
   margin-top: 27px;
   margin-bottom: 79px;
 }
@@ -465,7 +471,8 @@ img {
 }
 
 .features .button {
-  padding: 10px 40px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .btn-apps {
@@ -477,9 +484,13 @@ img {
 }
 .btn-apps:active {
   background-color: #009053;
+  border-top-color: #007b47;
 }
 
 .btn-presentations {
+  padding-top: 8px;
+  padding-bottom: 10px;
+  border-top: 2px solid transparent;
   background-color: #efc84a;
 }
 .btn-presentations:hover {
@@ -487,6 +498,7 @@ img {
 }
 .btn-presentations:active {
   background-color: #c09b24;
+  border-top-color: #a3841f;
 }
 
 /* =================== company-description ============     */
@@ -651,7 +663,7 @@ img {
   height: 416px;
 }
 
-/*================ footer-map-inner *========================*/
+/*================ footer-map-inner ========================*/
 
 .footer-inner {
   position: relative;
@@ -697,13 +709,7 @@ img {
 }
 
 .index-info-button {
-  padding: 0;
-  padding: 10px 0;
   width: 204px;
-  font-weight: 500;
-  font-size: 12px;
-  font-family: "Roboto", "Arial", sans-serif;
-  line-height: 18px;
   margin-right: 3px;
   margin-left: 3px;
 }
@@ -765,7 +771,7 @@ img {
   background-position: -245px -161px;
 }
 
-/*-----------------modal-content------------------*/
+/*=============================modal-content======================*/
 
 .modal-content {
   position: fixed;
@@ -879,7 +885,6 @@ img {
 
 .write-info-button {
   width: 100%;
-  padding: 10px 0;
   margin-top: 48px;
   border-radius: 5px/2px;
 }
@@ -892,7 +897,7 @@ img {
   border: 2px solid #56bffb;
 }
 
-/*-------------------------overlay----------------------------*/
+/*==============================overlay=====================*/
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -906,7 +911,7 @@ img {
 }
 
 
-/*=======================Страница -КАТАЛОГ=========================*/
+/*=======================catalog.html=========================*/
 
 .catalog-directions {
   background-color: #eeeeee;
@@ -921,12 +926,13 @@ img {
   background: #4cb6e8;
 
 }
-/*-------------------catalog-filter-----------------*/
+
+/*=======================catalog-filter====================*/
 .catalog-filter {
   float: left;
   width: 240px;
   min-height: 300px;
-
+  background: #9a87d6;
   margin-right: 20px;
 }
 
@@ -945,109 +951,7 @@ img {
   background: #4ad24a;
 
 }
-
-.field ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0;
-
-}
-
-.field li {
-
-  margin-bottom: 19px;
-  font-size: 16px;
-  line-height: 20px;
-
-}
-.selection-grid label,
-.selection-specification label {
-  color: #283136;
-
-}
-.selection-grid {
-
-}
-.selection-specification {
-
-}
-
-
-
-.range-filter legend,
-.selection-grid legend,
-.selection-specification legend {
-  margin-bottom: 18px;
-}
-.selection-grid {
-  margin-bottom: 30px;
-}
-
-.selection-specification {
-  margin-bottom: 39px;
-}
-
-
-
-
-
-
-
-
-.login-radio input[type="radio"],
-.login-checkbox input[type="checkbox"] {
-  display: none;
-}
-
-.login-radio,
-.login-checkbox {
-
-  position: relative;
-
-  padding-left: 35px;
-
-  cursor: pointer;
-
-
-}
-
-.login-radio:hover,
-.login-checkbox:hover {
-  color: #000000;
-}
-.login-radio input[type="radio"] + .radio-indicator-1 {
-  position: absolute;
-  left: 0;
-  top: -3px;
-
-}
-
-.login-radio input[type="radio"] + .radio-indicator-2,
-.login-radio input[type="radio"] + .radio-indicator-3{
-  position: absolute;
-
-  content: "";
-  top: -3px;
-  left: 0px;
-
-  background: url("../img/sprite.png") no-repeat;
-
-  width: 25px;
-  height: 25px;
-  background-position: -217px -83px;
-
-}
-
-/*--------------------------checkbox-------------------------*/
-
- 
-
-
-
-
-
-
+/*======================range-filter=================*/
 
 
 .range-filter {
@@ -1132,6 +1036,100 @@ img {
   color: #283136;
   border-radius: 2px;
 }
+
+/*========== selection-grid      selection-specification =============*/
+
+
+.field ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+
+}
+
+.field li {
+
+  margin-bottom: 19px;
+  font-size: 16px;
+  line-height: 20px;
+
+}
+.selection-grid label,
+.selection-specification label {
+  color: #283136;
+
+}
+
+.range-filter legend,
+.selection-grid legend,
+.selection-specification legend {
+  margin-bottom: 18px;
+}
+
+.selection-grid {
+  margin-bottom: 30px;
+}
+
+.selection-specification {
+  margin-bottom: 39px;
+  background: #d5a5a5;
+}
+
+
+
+.login-radio input[type="radio"],
+.login-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.login-radio,
+.login-checkbox {
+  position: relative;
+
+  padding-left: 35px;
+
+  cursor: pointer;
+
+
+}
+
+.login-radio:hover,
+.login-checkbox:hover {
+  color: #000000;
+}
+.login-radio input[type="radio"] + .radio-indicator-1 {
+  position: absolute;
+  left: 0;
+  top: -3px;
+
+}
+
+.login-radio input[type="radio"] + .radio-indicator-2,
+.login-radio input[type="radio"] + .radio-indicator-3{
+  position: absolute;
+
+  content: "";
+  top: -3px;
+  left: 0px;
+
+  background: url("../img/sprite.png") no-repeat;
+
+  width: 25px;
+  height: 25px;
+  background-position: -217px -83px;
+
+}
+
+/*--------------------------checkbox-------------------------*/
+
+
+
+
+
+
+
+
 
 
 
