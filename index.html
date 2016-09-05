@@ -194,24 +194,45 @@
       </div>
     </footer>
 
-    <div class="modal-content  modal-content-info">
+    <div class="modal-content">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="write-form-field-1">
           <label for="text-name">Ваше имя</label><br>
-          <input type="text" id="text-name" name="name" value="представьтесь, пожалуйста">
+          <input type="text" id="text-name" name="name" value="" placeholder="представьтесь, пожалуйста">
         </div>
         <div class="write-form-field-2">
           <label for="text-e-mail">Ваш e-mail</label><br>
-          <input type="text" id="text-e-mail" name="e-mail" value="для отправки ответа">
+          <input type="text" id="text-e-mail" name="e-mail" value="" placeholder="для отправки ответа">
         </div>
         <div class="write-form-field-3">
           <label for="text-letter">Текст письма:</label><br>
-          <input type="text" id="text-letter" name="letter" value="в свободной форме">
+          <input type="text" id="text-letter" name="letter" value="" placeholder="в свободной форме">
         </div>
         <button class="button  write-info-button" type="submit">отправить</button>
       </form>
     </div>
     <div class="modal-overlay"></div>
+    <script>
+
+
+
+       var link = document.querySelector(".index-info-button");
+       var popup = document.querySelector(".modal-content");
+       var close = document.querySelector(".modal-content-close");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+      });
+
+
+    </script>
+
   </body>
 </html>

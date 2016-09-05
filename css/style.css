@@ -789,8 +789,15 @@ img {
   margin-left: -325px;
   z-index: 100;
   background: #ffffff;
-
+  display: none;
 }
+
+.modal-content-show {
+  display: block;
+}
+
+
+
 
 .modal-content-close {
   position: absolute;
