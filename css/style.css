@@ -93,7 +93,7 @@ body {
    background-position: -215px -198px;
 }
 
-.sprite-icon-down-dir-blocked {
+.sprite-icon-down-dir-activity {
    width: 11px;
    height: 10px;
    background-position: -254px -20px;
@@ -129,7 +129,7 @@ body {
    background-position: -71px -243px;
 }
 
-.sprite-icon-up-dir-blocked {
+.sprite-icon-up-dir-activity {
    width: 11px;
    height: 10px;
    background-position: -122px -243px;
@@ -149,7 +149,7 @@ body {
 
 
  /*=======================index.html=====================*/
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
 }
@@ -224,8 +224,7 @@ img {
 }
 
 .main-navigation a:active {
-  color: #000000;
-  opacity: 0.4;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .main-navigation .active-3 {      /* -----catalog.html------- */
@@ -271,8 +270,8 @@ img {
 }
 
 .login:active {
-  color: #000000;
-  opacity: 0.4;
+
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .login::before {
@@ -773,6 +772,7 @@ img {
 
 /*=============================modal-content======================*/
 
+
 .modal-content {
   position: fixed;
   box-sizing: border-box;
@@ -783,12 +783,13 @@ img {
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
   width: 630px;
   height: 416px;
+
   bottom: 250px;
   left: 50%;
   margin-left: -325px;
   z-index: 100;
   background: #ffffff;
-  display: none;
+
 }
 
 .modal-content-close {
@@ -898,6 +899,7 @@ img {
 }
 
 /*==============================overlay=====================*/
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -911,28 +913,32 @@ img {
 }
 
 
-/*=======================catalog.html=========================*/
+/*=======================  catalog.html =========================*/
 
 .catalog-directions {
   background-color: #eeeeee;
+  box-sizing: border-box;
 }
 
 .catalog-subtitle h1 {
-  text-align: center;
+
+  padding-left: 77px;
+  padding-right: 91px;
   font-size: 40px;
   padding-top: 28px;
   padding-bottom: 82px;
-  color: #000;
-  background: #4cb6e8;
+  text-align: center;
 
 }
 
 /*=======================catalog-filter====================*/
+
 .catalog-filter {
   float: left;
-  width: 240px;
+
+  padding-bottom: 30px;
   min-height: 300px;
-  background: #9a87d6;
+
   margin-right: 20px;
 }
 
@@ -948,13 +954,14 @@ img {
   padding: 0px;
   text-transform: uppercase;
   font-size: 18px;
-  background: #4ad24a;
+
 
 }
 /*======================range-filter=================*/
 
 
 .range-filter {
+
   width: 240px;
 
   margin-top: 77px;
@@ -962,6 +969,7 @@ img {
 }
 
 .range-controls {
+
   position: relative;
   height: 41px;
   padding-top: 39px;
@@ -970,20 +978,24 @@ img {
   margin-bottom: 14px;
   border-radius: 3px;
   background: #f1f1f1;
+
 }
 
 .range-controls .scale {
+
   height: 2px;
   background: #d7dcde;
 }
 
 .range-controls .bar {
+
   width: 70%;
   height: 2px;
   background: #00ca74;
 }
 
 .range-controls .toggle {
+
   position: absolute;
   top: 30px;
   left: 0px;
@@ -1009,6 +1021,7 @@ img {
 }
 
 .price-controls label {
+
   display: inline-block;
   font-size: 16px;
   text-transform: uppercase;
@@ -1022,6 +1035,7 @@ img {
 }
 
 .price-controls input {
+
   width: 60px;
   padding: 8px 10px;
   margin-left: 5px;
@@ -1035,12 +1049,14 @@ img {
   text-align: center;
   color: #283136;
   border-radius: 2px;
+
 }
 
 /*========== selection-grid      selection-specification =============*/
 
 
 .field ul {
+
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1064,7 +1080,9 @@ img {
 .range-filter legend,
 .selection-grid legend,
 .selection-specification legend {
+
   margin-bottom: 18px;
+
 }
 
 .selection-grid {
@@ -1072,25 +1090,22 @@ img {
 }
 
 .selection-specification {
+
   margin-bottom: 39px;
-  background: #d5a5a5;
+
 }
-
-
 
 .login-radio input[type="radio"],
 .login-checkbox input[type="checkbox"] {
+
   display: none;
 }
 
 .login-radio,
 .login-checkbox {
   position: relative;
-
   padding-left: 35px;
-
   cursor: pointer;
-
 
 }
 
@@ -1098,56 +1113,204 @@ img {
 .login-checkbox:hover {
   color: #000000;
 }
-.login-radio input[type="radio"] + .radio-indicator-1 {
+/*-------------------------- radio     checkbox -------------------------*/
+
+.radio-indicator {
+
   position: absolute;
-  left: 0;
-  top: -3px;
-
-}
-
-.login-radio input[type="radio"] + .radio-indicator-2,
-.login-radio input[type="radio"] + .radio-indicator-3{
-  position: absolute;
-
-  content: "";
-  top: -3px;
+  top: -2px;
   left: 0px;
-
   background: url("../img/sprite.png") no-repeat;
-
   width: 25px;
   height: 25px;
   background-position: -217px -83px;
+}
+
+.radio-indicator:hover {
+  background-position: -150px -148px;
+}
+
+.login-radio input[type="radio"]:checked + .radio-indicator {
+  background-position: -20px -148px;
+ }
+
+.login-radio input[type="radio"]:checked + .radio-indicator:hover {
+  background-position: -85px -148px;
+ }
+
+.checkbox-indicator {
+
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  background: url("../img/sprite.png") no-repeat;
+  width: 27px;
+  height: 25px;
+  background-position: -191px -20px;
 
 }
 
-/*--------------------------checkbox-------------------------*/
+.checkbox-indicator:hover {
+  background-position: -20px -83px;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  background-position: -83px -83px;
+ }
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator:hover {
+  background-position: -150px -83px;
+ }
+
+/*--------------------.catalog-btn-------------------*/
+.catalog-btn {
+
+ font-weight: 700;
+ color: #000000;
+ background-color: #f1f1f1;
+ margin-left: 1px;
+ width: 155px;
+}
+
+.catalog-btn:hover {
+  background-color: #e5e5e5;
+}
+.catalog-btn:active {
+  border-top-color: #b5b5b5;
+  background-color: #d5d5d5;
+}
 
 
 
 
+/*=========================catalog-list=========================*/
+.catalog-section {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*----------------------catalog-list----------------------*/
-.catalog-list {
   float: right;
   width: 560px;
+  padding-top: 72px;
+
+}
+
+/*=============================sorting==========================*/
+.sorting {
+
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 0;
+  text-transform: uppercase;
+  width: 100%;
+  min-height: 10px;
+
+}
+
+.sorting h4,
+.sorting  a,
+.sorting span {
+  display: inline-block;
+
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  vertical-align: middle;
+
+}
+
+.sorting h4 {
+  margin-right: 40px;
+}
+
+.sorting a {
+  text-decoration: none;
+  margin-right: 44px;
+  color: rgba(0, 0, 0, 0.3);
+
+  border-bottom: 1px dotted #00ca74;
+
+}
+
+.sorting a:hover {
+  color: #000000;
+  border-bottom: 1px solid #00ca74;
+}
+
+.sorting a:active {
+  border-bottom: 1px solid transparent;
+}
+
+
+/*-------------------------------activity
+.sorting .activity {
+  color: #000000;
+  border-bottom: 1px solid transparent;
+}
+-----------------------------------*/
+
+.sorting span {
+
+  content: "";
+  width: 11px;
+  height: 10px;
+
+}
+
+/*
+.sorting .icon-1 {
+  margin-left: 57px;
+  background: url("../img/sprite.png") no-repeat;
+
+  background-position: -215px -148px;
+}
+.sorting .icon-1:hover {
+  background-position: -282px -70px;
+}
+
+.sorting .icon-1:active {
+  background-position: -215px -198px;
+
+}
+*/
+
+ .sorting .icon-1-activity {
+   margin-left: 57px;
+   background: url("../img/sprite.png") no-repeat;
+
+   background-position: -254px -20px;
+}
+
+.sorting .icon-2 {
+  float: right;
+  margin-top: 3px;
+  background: url("../img/sprite.png") no-repeat;
+
+  background-position: -20px -243px;
+}
+
+.sorting .icon-2:hover {
+  background-position: -266px -243px;
+}
+
+.sorting .icon-2:active {
+  background-position: -71px -243px;
+}
+/*
+.icon-2-activity {
+  float: right;
+  margin-top: 3px;
+  background: url("../img/sprite.png") no-repeat;
+
+  background-position: -122px -243px;
+}
+
+*/
+
+/*========================catalog-list==========================*/
+.catalog-list {
+
+  font-size: 0;
   min-height: 300px;
-  background-color: #ccc;
+  margin-top: 21px;
+
 }
 
 .catalog-item {
@@ -1160,7 +1323,7 @@ img {
 	height: 270px;
 	overflow: hidden;
 
-	margin-left: 80px;
+  margin-right: 80px;
 	margin-bottom: 80px;
 
 	-webkit-box-sizing: border-box;
@@ -1179,6 +1342,10 @@ img {
 	transition: background-color .3s linear;
 }
 
+.catalog-item:nth-child(2n){
+  margin-right: 0;
+}
+
 .catalog-item:hover {
 	background-color: #797979;
 }
@@ -1194,7 +1361,7 @@ img {
 	width: 10px;
 	height: 10px;
 
-	background-color: #fff;
+	background-color: #ffffff;
 	border-radius: 50%;
 }
 
@@ -1204,7 +1371,7 @@ img {
 .catalog-item:before {
 	left: 29px;
 
-	box-shadow: 17px 0 0 0 #fff;
+	box-shadow: 17px 0 0 0 #ffffff;
 }
 
 
@@ -1231,7 +1398,7 @@ img {
 
 	padding: 30px 20px;
 
-	background-color: #fff;
+	background-color: #ffffff;
 	opacity: 0;
 
 	text-align: center;
@@ -1244,27 +1411,29 @@ img {
 	margin: 0;
 
 	text-transform: uppercase;
-	font: 500 18px/24px "Roboto";
-	color: #000;
+	font: 500 18px/24px "Roboto", "Arial", sans-serif;
+	color: #000000;
 }
 .catalog-item-description p {
 	height: 160px;
 	overflow: hidden;
 	margin: 12px 0 0 0;
 
-	font: 500 14px/18px "Roboto";
+	font: 500 14px/18px "Roboto", "Arial", sans-serif;
 	color: #283136;
 }
 .catalog-item-buy {
 	position: absolute;
 	left: 30px;
 	bottom: 30px;
-
+  padding: 0;
 	display: block;
 	width: 140px;
-	height: 38px;
+  padding-top: 7px;
+  padding-bottom: 9px;
 
-	font: 500 18px/18px "Roboto";
+	font: 500 18px/18px "Roboto", "Arial", sans-serif;
+
 }
 
 .catalog-item:hover .catalog-item-description {
@@ -1272,4 +1441,67 @@ img {
 	opacity: 1;
 }
 
-/*-----------------------------*/
+/*===========================paginator=====================*/
+.paginator {
+  clear: both;
+  width: 100%;
+  margin-bottom: 79px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+}
+
+.paginator a {
+  min-width: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  color: #000000;
+  background-color: #f1f1f1;
+}
+.paginator .disabled {
+  border-top: none;
+  border: 2px solid #f2f2f2;
+  padding: 8px;
+
+  margin-right: 58px;
+  background-color: #ffffff;
+
+}
+
+.paginator .current {
+  margin-right: 6px;
+
+}
+
+.paginator .next {
+
+  padding-left: 30px;
+  padding-right: 31px;
+}
+
+.paginator .current:hover,
+.paginator .next:hover {
+
+  background-color: #e5e5e5;
+}
+.paginator .current:active,
+.paginator .next:active {
+
+  background-color: #d5d5d5;
+  border-top-color: #b5b5b5;
+}
+
+/*======================== footer catalog.html====================*/
+
+.index-info-title-catalog,
+.index-info-button-catalog,
+.declaration-catalog {
+
+  font-weight: 700;
+}
+.modal-content-catalog {
+
+  top: 276px;
+}
