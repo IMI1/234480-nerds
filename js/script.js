@@ -13,5 +13,3 @@
     event.preventDefault();
     popup.classList.remove("modal-content-show");
   });
-
- 
