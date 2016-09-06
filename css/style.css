@@ -160,7 +160,8 @@ img {
 }
 
 .section {
-  min-width: 1200px;
+
+  min-width: 900px;
 }
 
 .header {
@@ -256,6 +257,7 @@ img {
  .login {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   margin-top: 56px;
   margin-bottom: 35px;
   padding-left: 35px;
@@ -660,7 +662,7 @@ img {
 
 .section-footer-map {
   height: 416px;
-  background: url("../img/map.png") center top no-repeat; /* заглушка для карты */
+  background: url('../img/map.png') center top no-repeat; /* заглушка для карты */
 }
 
 /*================ footer-map-inner ========================*/
@@ -794,7 +796,7 @@ img {
 }
 
 
-.modal-content-show {          /*=========  for j.s. ===================*/
+.modal-content-show {
   display: block;
 }
 
@@ -1032,6 +1034,7 @@ img {
 .price-controls label {
 
   display: inline-block;
+  vertical-align: middle;
   font-size: 16px;
   text-transform: uppercase;
   color: #283136;
@@ -1205,6 +1208,7 @@ img {
 .sorting {
 
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   font-size: 0;
   text-transform: uppercase;
@@ -1285,6 +1289,8 @@ img {
    background: url("../img/sprite.png") no-repeat;
 
    background-position: -254px -20px;
+
+   cursor: pointer;
 }
 
 .sorting .icon-2 {
@@ -1293,6 +1299,8 @@ img {
   background: url("../img/sprite.png") no-repeat;
 
   background-position: -20px -243px;
+
+  cursor: pointer;
 }
 
 .sorting .icon-2:hover {
@@ -1457,7 +1465,6 @@ img {
   margin-bottom: 79px;
   box-sizing: border-box;
   text-transform: uppercase;
-  white-space: nowrap;
 
 }
 
@@ -1465,6 +1472,8 @@ img {
   min-width: 18px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-right: 6px;
+  margin-bottom: 6px;
 
   color: #000000;
   background-color: #f1f1f1;
@@ -1474,15 +1483,10 @@ img {
   border: 2px solid #f2f2f2;
   padding: 8px;
 
-  margin-right: 58px;
   background-color: #ffffff;
 
 }
 
-.paginator .current {
-  margin-right: 6px;
-
-}
 
 .paginator .next {
 
