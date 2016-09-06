@@ -654,12 +654,13 @@ img {
 /*================ footer-map *========================*/
 
 .section-footer {
-  width: 1200px;
-  margin: 0 auto;
+  /*width: 1200px;*/
+  /*margin: 0 auto;*/
 }
 
 .section-footer-map {
   height: 416px;
+  background: url("../img/map.png") center top no-repeat; /* заглушка для карты */
 }
 
 /*================ footer-map-inner ========================*/
@@ -793,7 +794,7 @@ img {
 }
 
 
-.modal-content-show {
+.modal-content-show {          /*=========  for j.s. ===================*/
   display: block;
 }
 
