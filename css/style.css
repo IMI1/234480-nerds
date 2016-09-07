@@ -667,7 +667,7 @@ img {
 
 .section-footer-map {
   height: 416px;
-  background: #f1efe8 url("../img/map.png") center top no-repeat; /* заглушка для карты */
+  background: url("../img/map.png") center top no-repeat; /* заглушка для карты */
 }
 
 /*================ footer-map-inner ========================*/
