@@ -1,13 +1,15 @@
+
 body {
+  min-width: 900px;
   margin: 0;
   padding: 0;
-  min-width: 900px;
+  font-size: 16px;
   font-weight: 500;
   font-family: "Roboto", "Arial", sans-serif;
-  font-size: 16px;
   color: #000000;
 }
-/*==================sprite ======================*/
+/*==================sprite======================*/
+
 .sprite {
   display: block;
   background-image: url("../img/sprite.png");
@@ -145,9 +147,7 @@ body {
   height: 15px;
   background-position: -333px -20px;
 }
-
-
- /*=======================index.html=====================*/
+/*=======================index.html=====================*/
 
 h1, h2, h3, h4, p {
   margin: 0;
@@ -167,13 +167,13 @@ img {
   background-color: #eeeeee;
 }
 
-.section-inner {                            /* --центрирующий---*/
+.section-inner {
   width: 880px;
-  border-top: 1px solid transparent;
   margin: 0 auto;
   padding: 0 10px;
+  border-top: 1px solid transparent;
 }
-                                            /* распорка*/
+
 .section-inner::after{
   display: table;
   content: "";
@@ -183,9 +183,9 @@ img {
 .header-logo {
   float: left;
   width: 139px;
-  margin-left: 1px;
   height: 56px;
   margin-top: 26px;
+  margin-left: 1px;
   margin-right: 20px;
 }
 /*=====================main-navigation========================*/
@@ -199,8 +199,8 @@ img {
 .main-navigation ul {
   margin: 0;
   padding: 0;
-  list-style: none;
   font-size: 0;
+  list-style: none;
 }
 
 .main-navigation li {
@@ -208,7 +208,6 @@ img {
   vertical-align: top;
   font-size: 14px;
   line-height: 24px;
-
 }
 
 .main-navigation a {
@@ -216,8 +215,8 @@ img {
   margin-top: 56px;
   margin-left: 45px;
   margin-bottom: 35px;
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 }
 
 .main-navigation a:hover {
@@ -228,7 +227,7 @@ img {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.main-navigation .active-3 {      /* -----catalog.html------- */
+.main-navigation .active-3 {
   position: relative;
 }
 
@@ -246,15 +245,14 @@ img {
 .main-navigation .active-3 a:hover {
   color: #000000;
 }
-
-/*--------------------------------------------------------------*/
+/*==========================================================*/
 
 .user-block {
   float: right;
   width: 100px;
 }
 
- .login {
+.login {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -296,7 +294,7 @@ img {
   background-position: -81px -20px;
   opacity: 0.15;
 }
-           /*====================== slaider======================= */
+/*======================slaider=======================*/
 
 .slider {
   margin-bottom: 80px;
@@ -317,19 +315,19 @@ img {
   left: 330px;
   width: 200px;
   height: 10px;
+  line-height: 0;
   text-align: center;
   z-index: 100;
-  line-height: 0;
 }
 
 .slider-dots label {
   display: inline-block;
   vertical-align: top;
-  margin: 0 3px;
   width: 4px;
   height: 4px;
-  border: 3px solid #ffffff;
+  margin: 0 3px;
   background: #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -359,23 +357,22 @@ img {
 }
 
 .slider-item-image-1 {
-  margin-top: 19px;
   width: 338px;
   height: 231px;
+  margin-top: 19px;
 }
 
 .slider-item-image-2 {
-  margin-top: 23px;
   width: 240px;
   height: 249px;
+  margin-top: 23px;
 }
 
 .slider-item-image-3 {
   width: 340px;
   height: 319px;
 }
-
-/* ========================text slider=======================*/
+/*========================text slider=======================*/
 
 .statement {
   margin: 0;
@@ -403,11 +400,10 @@ img {
   vertical-align: top;
   padding-top: 7px;
   padding-bottom: 10px;
-  font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
+  font-weight: 500;
   font-family: "Roboto", "Arial", sans-serif;
-  border-radius: 2px;
+  line-height: 18px;
   color: #ffffff;
   background-color: #fb565a;
   text-transform: uppercase;
@@ -417,6 +413,7 @@ img {
   outline: none;
   cursor: pointer;
   border-top: 3px solid transparent;
+  border-radius: 2px;
 }
 
 .button:hover {
@@ -434,7 +431,6 @@ img {
   padding-left: 70px;
   padding-right: 70px;
 }
-
 /*======================directions=========================*/
 
 .directions-inner::after {
@@ -471,8 +467,8 @@ img {
 }
 
 .features .button {
-  padding-right: 40px;
   padding-left: 40px;
+  padding-right: 40px;
 }
 
 .btn-apps {
@@ -503,8 +499,7 @@ img {
   background-color: #c09b24;
   border-top-color: #a3841f;
 }
-
-/* =================== company-description ============     */
+/*===================company-description============*/
 
 .company-description-inner::after {
   display: block;
@@ -529,19 +524,18 @@ img {
 }
 
 .subtitle {
-  color: #283136;
   margin-bottom: 24px;
   font-size: 16px;
   line-height: 22px;
+  color: #283136;
 }
 
 .list-description ul {
   margin: 0;
   padding: 0;
-  list-style: none;
   font-size: 0;
   color: #283136;
-
+  list-style: none;
 }
 
 .list-description li {
@@ -550,12 +544,12 @@ img {
   line-height: 22px;
 }
 
- .list {
+.list {
   margin-bottom: 21px;
   padding-left: 36px;
 }
 
- .list p::before {
+.list p::before {
   position: absolute;
   content: "";
   top: 11px;
@@ -607,9 +601,7 @@ img {
   width: 62px;
   height: 2px;
   background-color: #eeeeee;
-
 }
-
 /*=============================partners========================*/
 
 .partners {
@@ -638,8 +630,8 @@ img {
 .partners-logo-1 {
   width: 198px;
   height: 37px;
-  margin-left: 12px;
   margin-top: 66px;
+  margin-left: 12px;
   margin-right: 120px;
 }
 
@@ -653,12 +645,11 @@ img {
   width: 207px;
   height: 86px;
   margin-top: 44px;
-  margin-right: 21px;
   margin-left: 123px;
+  margin-right: 21px;
   margin-bottom: 35px;
 }
-
-/*================ footer-map *========================*/
+/*================footer-map========================*/
 
 .section-footer {
   /*width: 1200px;*/
@@ -667,10 +658,9 @@ img {
 
 .section-footer-map {
   height: 416px;
-  background: url("../img/map.png") center top no-repeat; /* заглушка для карты */
+  background: url("../img/map.png") center top no-repeat;
 }
-
-/*================ footer-map-inner ========================*/
+/*================footer-map-inner========================*/
 
 .footer-inner {
   position: relative;
@@ -694,15 +684,15 @@ img {
 
 .index-info-title {
   margin-bottom: 11px;
-  color: #000000;
   font-size: 16px;
   line-height: 30px;
+  color: #000000;
 }
 
 .contact-info p {
-  color: #666666;
   font-size: 16px;
   line-height: 20px;
+  color: #666666;
 }
 
 .address {
@@ -717,19 +707,18 @@ img {
 
 .index-info-button {
   width: 204px;
-  margin-right: 3px;
   margin-left: 3px;
+  margin-right: 3px;
 }
-
-/*==================== footer-socials====================*/
+/*====================footer-socials====================*/
 
 .footer-content {
   float: right;
   width: 560px;
 }
 
- .footer-content .statement {
-   margin-bottom: 10px;
+.footer-content .statement {
+  margin-bottom: 10px;
 }
 
 .footer-socials {
@@ -750,8 +739,8 @@ img {
   width: 62px;
   height: 62px;
   margin-right: 27px;
-  background: #e1e1e1 url("../img/sprite.png") no-repeat center;
   font-size: 0;
+  background: #e1e1e1 url("../img/sprite.png") no-repeat center;
   text-decoration: none;
   border-radius: 50%;
 }
@@ -777,14 +766,12 @@ img {
   margin-right: 0px;
   background-position: -245px -161px;
 }
-
 /*=============================modal-content======================*/
-
 
 .modal-content {
   position: fixed;
-  bottom: 250px;
   left: 50%;
+  bottom: 250px;
   width: 630px;
   height: 416px;
   margin-left: -325px;
@@ -809,11 +796,11 @@ img {
   right: 6px;
   width: 41px;
   height: 41px;
-  background-color: #fb565a;
   font-size: 0;
+  background-color: #fb565a;
   border: 0;
-  outline: 0;
   border-radius: 50%;
+  outline: 0;
   cursor: pointer;
 }
 
@@ -855,12 +842,12 @@ img {
 .write-form input {
   padding: 0px;
   font-size: 12px;
-  line-height: 18px;
   font-weight: 500;
   font-family: "Roboto", "Arial", sans-serif;
+  line-height: 18px;
   color: #000000;
-  text-transform: uppercase;
   border: 2px solid #d7dcde;
+  text-transform: uppercase;
   box-sizing: border-box;
   border-radius: 2px;
   outline: none;
@@ -908,7 +895,6 @@ img {
 .write-form input:focus {
   border: 2px solid #56bffb;
 }
-
 /*==============================overlay=====================*/
 
 .modal-overlay {
@@ -920,11 +906,8 @@ img {
   background: rgba(0, 0, 0, 0.5);
   z-index: 10;
   display: none;
-
 }
-
-
-/*=======================  catalog.html =========================*/
+/*=======================catalog.html=========================*/
 
 .catalog-directions {
   background-color: #eeeeee;
@@ -939,7 +922,6 @@ img {
   font-size: 40px;
   text-align: center;
 }
-
 /*=======================catalog-filter====================*/
 
 .catalog-filter {
@@ -961,7 +943,6 @@ img {
   font-size: 18px;
   text-transform: uppercase;
 }
-
 /*======================range-filter=================*/
 
 .range-filter {
@@ -975,8 +956,8 @@ img {
   height: 41px;
   margin-bottom: 14px;
   padding-top: 39px;
-  padding-right: 20px;
   padding-left: 20px;
+  padding-right: 20px;
   background: #f1f1f1;
   border-radius: 3px;
 }
@@ -1021,8 +1002,8 @@ img {
   display: inline-block;
   vertical-align: middle;
   width: 50%;
-  color: #283136;
   font-size: 16px;
+  color: #283136;
   text-transform: uppercase;
 }
 
@@ -1034,18 +1015,17 @@ img {
   width: 60px;
   margin-left: 5px;
   padding: 8px 10px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   color: #283136;
   background: #f1f1f1;
-  text-align: center;
   border: none;
+  text-align: center;
   outline: none;
   border-radius: 2px;
 }
-
-/*========== selection-grid      selection-specification =============*/
+/*==========selection-grid  selection-specification=============*/
 
 .field ul {
   margin: 0;
@@ -1063,7 +1043,6 @@ img {
 .selection-grid label,
 .selection-specification label {
   color: #283136;
-
 }
 
 .range-filter legend,
@@ -1096,8 +1075,7 @@ img {
 .login-checkbox:hover {
   color: #000000;
 }
-
-/*-------------------------- radio     checkbox -------------------------*/
+/*=========================radio  checkbox======================*/
 
 .radio-indicator {
   position: absolute;
@@ -1142,15 +1120,14 @@ img {
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator:hover {
   background-position: -150px -83px;
 }
-
-/*--------------------.catalog-btn-------------------*/
+/*===============================.catalog-btn=======================*/
 
 .catalog-btn {
-  margin-left: 1px;
   width: 155px;
+  margin-left: 1px;
+  font-weight: 700;
   color: #000000;
   background-color: #f1f1f1;
-  font-weight: 700;
 }
 
 .catalog-btn:hover {
@@ -1161,7 +1138,6 @@ img {
   border-top-color: #b5b5b5;
   background-color: #d5d5d5;
 }
-
 /*=========================catalog-list=========================*/
 
 .catalog-section {
@@ -1169,8 +1145,8 @@ img {
   width: 560px;
   padding-top: 72px;
 }
-
 /*=============================sorting==========================*/
+
 .sorting {
   display: inline-block;
   vertical-align: top;
@@ -1186,9 +1162,9 @@ img {
 .sorting span {
   display: inline-block;
   vertical-align: middle;
-  color: #000000;
   font-size: 12px;
   line-height: 16px;
+  color: #000000;
 }
 
 .sorting h4 {
@@ -1211,13 +1187,12 @@ img {
   border-bottom: 1px solid transparent;
 }
 
-
-/*-------------------------------activity
+/*
 .sorting .activity {
   color: #000000;
   border-bottom: 1px solid transparent;
 }
------------------------------------*/
+*/
 
 .sorting span {
   content: "";
@@ -1272,14 +1247,12 @@ img {
   background-position: -122px -243px;
 }
 */
-
 /*========================catalog-list==========================*/
 
 .catalog-list {
   min-height: 300px;
   margin-top: 21px;
   font-size: 0;
-
 }
 
 .catalog-item {
@@ -1292,17 +1265,14 @@ img {
   margin-right: 80px;
 	margin-bottom: 80px;
   padding-top: 30px;
-
+  background-color: #f1f1f1;
+	border-radius: 5px 5px 0 0;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-
-	background-color: #f1f1f1;
-	border-radius: 5px 5px 0 0;
-
-	-webkit-transition: background-color .3s linear;   	/*cursor: pointer;*/
+	-webkit-transition: background-color .3s linear;
 	-o-transition: background-color .3s linear;
-	transition: background-color .3s linear;
+  transition: background-color .3s linear;
 }
 
 .catalog-item:nth-child(2n){
@@ -1334,7 +1304,6 @@ img {
 	box-shadow: 17px 0 0 0 #ffffff;
 }
 
-.catalog-item-img {}
 .catalog-item-img img {
 	width: 240px;
 	height: 240px;
@@ -1344,20 +1313,16 @@ img {
 	position: absolute;
 	top: 50px;
 	left: 20px;
-
-	display: block;               /*display: none;*/
+	display: block;
 	width: 200px;
 	height: 200px;
-
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-
-	padding: 30px 20px;
+  padding: 30px 20px;
 	background-color: #ffffff;
 	opacity: 0;
 	text-align: center;
-
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	-webkit-transition: opacity .5s linear;
 	-o-transition: opacity .5s linear;
 	transition: opacity .5s linear;
@@ -1372,8 +1337,8 @@ img {
 
 .catalog-item-description p {
 	height: 160px;
+  overflow: hidden;
   margin: 12px 0 0 0;
-	overflow: hidden;
 	font: 500 14px/18px "Roboto", "Arial", sans-serif;
 	color: #283136;
 }
@@ -1390,18 +1355,17 @@ img {
   display: block;
 }
 
-.catalog-item:hover .catalog-item-description {     	/*display: block;*/
+.catalog-item:hover .catalog-item-description {
 	opacity: 1;
 }
-
 /*===========================paginator=====================*/
 
 .paginator {
   clear: both;
   width: 100%;
   margin-bottom: 79px;
-  box-sizing: border-box;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
 
 .paginator a {
@@ -1435,8 +1399,7 @@ img {
   background-color: #d5d5d5;
   border-top-color: #b5b5b5;
 }
-
-/*======================== footer catalog.html====================*/
+/*========================footer  catalog.html====================*/
 
 .index-info-title-catalog,
 .index-info-button-catalog,
